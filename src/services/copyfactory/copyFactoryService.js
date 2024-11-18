@@ -1,0 +1,1 @@
+const {connection,query} = require("../../config/dbConfig");
