@@ -29,12 +29,10 @@ status: "error",
 error: err.message
 });
 }else{
-const token = generateToken(data.id);
-res.status(200).send({
-status: "success",
-data:{token, data}
-});
-
+//const token = generateToken(data.id);
+logger.info(`Data: ${JSON.stringify(data)}`);
+res.status(200).json({status: "success",data: data});
+return;
 }
 });
 };

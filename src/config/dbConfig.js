@@ -1,39 +1,36 @@
-const mysql = require("mysql");
+const mysql = require("mysql2/promise");
 require('dotenv').config();
 const logger = require("../utility/logger");
 
 
 //IMPORTING THE mysql module into the app
 const {DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT } = process.env;
-const connection = new Pool({
-  user: DB_USER,
-  host: DB_HOST,
-  database: DB_NAME,
-  password: DB_PASS,
-  port: DB_PORT,
-});
+const dbConfig = {
+    host: DB_HOST,
+    user: DB_USER,
+    password: DB_PASS,
+    database: DB_NAME,
+  };
 
-connection.on('connect', () => {
-    logger.info('Connected to the CopyFactory Services');
-  });
-  
+  //creating the connection here
+  const connection = async () => {
+    try {
+          return await mysql.createConnection(dbConfig);
+   }catch(e){
+        logger.info(`Error in connecting to DB: ${e}`);
+        process.exit(1); // Exit the application if the connection fails
+        return;
+    }
+  }
 
-  //if error pops up during the connection
-connection.on('error', (err) => {
-    console.error('Unexpected error on idle client', err);
-    process.exit(-1);
-  });
-  
+
 //async function for calling SQL queries
 async function query(sqlQuery, params) {
     try {
-      const start = Date.now();
+      const connection = await mysql.createConnection(dbConfig);
       const result = await connection.query(sqlQuery, params);
-      const period = Date.now - start;
-      logger.info("dbConfig: query() Query Executed successfully", sqlQuery, {
-        period,
-        rows: result.rowCount,
-      });
+      
+      logger.info(`dbConfig: query() Query Executed successfully, ${JSON.stringify(result)}`);
   
       //return response to the call
       return result;
@@ -44,5 +41,9 @@ async function query(sqlQuery, params) {
     }
   }
 
-  
-  module.exports = {connection,query};
+
+
+//initiliazing the date
+const today = new Date();
+const date = today.toISOString().split('T')[0];
+module.exports = {query,date};

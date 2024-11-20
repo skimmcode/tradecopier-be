@@ -1,0 +1,67 @@
+[32minfo[39m: Error: TypeError: Cannot read properties of undefined (reading 'query')
+[32minfo[39m: Error: ReferenceError: date is not defined
+[32minfo[39m: Error: ReferenceError: date is not defined
+[31merror[39m: dbConfig: query() Error Executing Query:: TypeError: Cannot read properties of undefined (reading 'query')
+    at query (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\config\dbConfig.js:36:39)
+    at User.create (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\services\auth\authService.js:24:3)
+    at exports.create (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\controllers\auth\userController.js:25:6)
+    at C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\middlewares\asyncHandler.js:3:15
+    at Layer.handle [as handle_request] (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\route.js:149:13)
+    at validatorHandler (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\middlewares\validatorHandler.js:12:5)
+    at signup (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\validators\inputValidator.js.js:106:5)
+    at Layer.handle [as handle_request] (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\route.js:149:13)
+[31merror[39m: dbConfig: query() Error Executing Query:: TypeError: connectionHandle.query is not a function
+    at query (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\config\dbConfig.js:36:45)
+    at User.create (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\services\auth\authService.js:24:3)
+    at exports.create (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\controllers\auth\userController.js:25:6)
+    at C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\middlewares\asyncHandler.js:3:15
+    at Layer.handle [as handle_request] (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\route.js:149:13)
+    at validatorHandler (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\middlewares\validatorHandler.js:12:5)
+    at signup (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\validators\inputValidator.js.js:106:5)
+    at Layer.handle [as handle_request] (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\route.js:149:13)
+[31merror[39m: dbConfig: query() Error Executing Query:: TypeError: connection.query is not a function
+    at query (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\config\dbConfig.js:37:39)
+    at User.create (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\services\auth\authService.js:24:3)
+    at exports.create (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\controllers\auth\userController.js:25:6)
+    at C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\middlewares\asyncHandler.js:3:15
+    at Layer.handle [as handle_request] (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\route.js:149:13)
+    at validatorHandler (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\middlewares\validatorHandler.js:12:5)
+    at signup (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\validators\inputValidator.js.js:106:5)
+    at Layer.handle [as handle_request] (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\route.js:149:13)
+[32minfo[39m: Error: TypeError: connectionHandle.query is not a function
+[32minfo[39m: Error: TypeError: connectionObj.query is not a function
+[32minfo[39m: Error: TypeError: connectionObj.query is not a function
+[31merror[39m: dbConfig: query() Error Executing Query:: TypeError: connection.query is not a function
+    at query (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\config\dbConfig.js:33:39)
+    at User.create (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\services\auth\authService.js:25:5)
+    at exports.create (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\controllers\auth\userController.js:25:6)
+    at C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\middlewares\asyncHandler.js:3:15
+    at Layer.handle [as handle_request] (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\route.js:149:13)
+    at validatorHandler (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\middlewares\validatorHandler.js:12:5)
+    at signup (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\src\validators\inputValidator.js.js:106:5)
+    at Layer.handle [as handle_request] (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Webservice\htdocs\tradecopier\be\app\tradecopier-be\node_modules\express\lib\router\route.js:149:13)
+[32minfo[39m: dbConfig: query() Query Executed successfully
+[32minfo[39m: dbConfig: query() Query Executed successfully
+[32minfo[39m: dbConfig: query() Query Executed successfully
+[32minfo[39m: dbConfig: query() Query Executed successfully
+[32minfo[39m: dbConfig: query() Query Executed successfully, on INSERT INTO users (username,first_name,last_name,email,password,user_role,active,created_at) VALUES (?,?,?,?,?,?,?,?), [{"fieldCount":0,"affectedRows":1,"insertId":6,"info":"","serverStatus":2,"warningStatus":2,"changedRows":0},null]
+[32minfo[39m: dbConfig: query() Query Executed successfully, on INSERT INTO users (username,first_name,last_name,email,password,user_role,active,created_at) VALUES (?,?,?,?,?,?,?,?), [{"fieldCount":0,"affectedRows":1,"insertId":7,"info":"","serverStatus":2,"warningStatus":2,"changedRows":0},null]
+[32minfo[39m: dbConfig: query() Query Executed successfully, on INSERT INTO users (username,first_name,last_name,email,password,user_role,active,created_at) VALUES (?,?,?,?,?,?,?,?), [{"fieldCount":0,"affectedRows":1,"insertId":8,"info":"","serverStatus":2,"warningStatus":2,"changedRows":0},null]
+[32minfo[39m: 11/18/2024, 1:50:52 PM
+[32minfo[39m: 2024-11-18
+[32minfo[39m: 2024-11-18
+[32minfo[39m: dbConfig: query() Query Executed successfully, on INSERT INTO users (username,first_name,last_name,email,password,user_role,active,created_at) VALUES (?,?,?,?,?,?,?,?), [{"fieldCount":0,"affectedRows":1,"insertId":9,"info":"","serverStatus":2,"warningStatus":1,"changedRows":0},null]
+[32minfo[39m: 2024-11-18
+[32minfo[39m: 2024-11-18
+[32minfo[39m: 2024-11-18
+[32minfo[39m: 2024-11-18
+[32minfo[39m: dbConfig: query() Query Executed successfully, [{"fieldCount":0,"affectedRows":1,"insertId":10,"info":"","serverStatus":2,"warningStatus":1,"changedRows":0},null]
+[32minfo[39m: dbConfig: query() Query Executed successfully, [{"fieldCount":0,"affectedRows":1,"insertId":11,"info":"","serverStatus":2,"warningStatus":1,"changedRows":0},null]

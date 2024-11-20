@@ -24,6 +24,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
 
+//adding the routing files to the main entry point
+require("./src/routes/users.route.js")(app);
+
 //set server to listen on port 5000
 app.listen(process.env.PORT,()=>{
     console.log(`Backend API running on port 5000`);
